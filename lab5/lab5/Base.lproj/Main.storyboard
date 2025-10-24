@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24127" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jw1" translatesAutoresizingMaskIntoConstraints="NO" id="aNN-eU-zrn">
+                                <rect key="frame" x="71.666666666666686" y="188" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="ARv-JM-X1Q"/>
+                                    <constraint firstAttribute="width" constant="250" id="IEF-Vh-SW9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name of the product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="899-Xs-kei">
+                                <rect key="frame" x="86.000000000000014" y="483" width="221.33333333333337" height="27.666666666666686"/>
+                                <color key="tintColor" red="0.9936523438" green="0.84555074549999998" blue="0.8654142064" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="25"/>
+                                <color key="textColor" red="0.9936523438" green="0.96054060819999998" blue="0.87514313440000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmq-HS-cBG">
+                                <rect key="frame" x="89" y="644" width="215" height="50"/>
+                                <color key="backgroundColor" red="0.9936523438" green="0.84555074549999998" blue="0.8654142064" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="H7j-z4-UUF"/>
+                                    <constraint firstAttribute="width" constant="215" id="ZFc-9e-LM7"/>
+                                </constraints>
+                                <color key="tintColor" red="0.9936523438" green="0.84555074547277187" blue="0.86541420637068756" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="show random jewelry">
+                                    <fontDescription key="titleFontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="22"/>
+                                    <color key="baseForegroundColor" red="0.96841150519999997" green="0.45880801049999997" blue="0.56832117969999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.9936523438" green="0.84555074549999998" blue="0.8654142064" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="RandomButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1MN-yR-OyQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJy-uu-bMm">
+                                <rect key="frame" x="20" y="540.66666666666663" width="353" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.85615665252595974" green="0.79914342653886894" blue="0.86078912019729614" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="AJy-uu-bMm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5df-hM-rPa"/>
+                            <constraint firstItem="899-Xs-kei" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="98q-qC-kbo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AJy-uu-bMm" secondAttribute="trailing" constant="20" id="BU2-pw-Ttb"/>
+                            <constraint firstItem="aNN-eU-zrn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GMU-Xx-dRw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qmq-HS-cBG" secondAttribute="bottom" constant="90" id="H2o-sn-iez"/>
+                            <constraint firstItem="Qmq-HS-cBG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qkm-36-JF0"/>
+                            <constraint firstItem="899-Xs-kei" firstAttribute="top" secondItem="aNN-eU-zrn" secondAttribute="bottom" constant="45" id="ZMe-kF-ubh"/>
+                            <constraint firstItem="AJy-uu-bMm" firstAttribute="top" secondItem="899-Xs-kei" secondAttribute="bottom" constant="30" id="aPy-bT-dTv"/>
+                            <constraint firstItem="AJy-uu-bMm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="efy-TH-3xs"/>
+                            <constraint firstItem="aNN-eU-zrn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="siM-cb-ueA"/>
+                            <constraint firstItem="Qmq-HS-cBG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="AJy-uu-bMm" secondAttribute="bottom" constant="10" id="z26-Gt-Exb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DescriptionLabel" destination="AJy-uu-bMm" id="omi-GM-OdO"/>
+                        <outlet property="ImageView1" destination="aNN-eU-zrn" id="gzU-wm-1ky"/>
+                        <outlet property="NameView1" destination="899-Xs-kei" id="l9x-Gf-MiF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78.625954198473281" y="113.38028169014085"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jw1" width="1350" height="1350"/>
+    </resources>
+</document>
