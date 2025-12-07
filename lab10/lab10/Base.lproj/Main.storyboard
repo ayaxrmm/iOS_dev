@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24127" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crz-Br-ilF">
+                                <rect key="frame" x="16" y="429" width="361" height="35.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.9936523438" green="0.84555074549999998" blue="0.8654142064" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="d9A-gz-JKW">
+                                <rect key="frame" x="50" y="484.66666666666674" width="293" height="250"/>
+                                <color key="backgroundColor" red="0.9936523438" green="0.84555074549999998" blue="0.8654142064" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="s7l-0S-FMX"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DO-ZG-LuH">
+                                <rect key="frame" x="150" y="759.66666666666663" width="93" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Roll">
+                                    <color key="baseForegroundColor" red="0.92505213019999999" green="0.42954909860000001" blue="0.4410803734" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.96841150519999997" green="0.45880801049999997" blue="0.56832117969999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="rollDidTap" destination="BYZ-38-t0r" eventType="touchUpInside" id="AfH-dz-b9f"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aqA-3v-6Gq">
+                                <rect key="frame" x="140" y="138" width="113" height="32"/>
+                                <segments>
+                                    <segment title="Light"/>
+                                    <segment title="Dark"/>
+                                </segments>
+                                <connections>
+                                    <action selector="themeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="k0U-uT-YwR"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ytq-5c-ohM">
+                                <rect key="frame" x="50" y="209" width="293" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="32y-gg-Qj7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ytq-5c-ohM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="8dN-Ll-Y9a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3DO-ZG-LuH" secondAttribute="trailing" constant="150" id="O4b-9J-9lg"/>
+                            <constraint firstItem="crz-Br-ilF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OfL-Bw-nBC"/>
+                            <constraint firstItem="aqA-3v-6Gq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="140" id="RiR-5e-Ql8"/>
+                            <constraint firstItem="crz-Br-ilF" firstAttribute="top" secondItem="ytq-5c-ohM" secondAttribute="bottom" constant="20" id="ZYj-dJ-h4G"/>
+                            <constraint firstItem="aqA-3v-6Gq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bMC-Fa-Y6X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d9A-gz-JKW" secondAttribute="trailing" constant="50" id="d9h-CF-BI5"/>
+                            <constraint firstItem="3DO-ZG-LuH" firstAttribute="top" secondItem="d9A-gz-JKW" secondAttribute="bottom" constant="25" id="dqd-HW-XOn"/>
+                            <constraint firstAttribute="trailing" secondItem="aqA-3v-6Gq" secondAttribute="trailing" constant="140" id="l7x-gU-Xf7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ytq-5c-ohM" secondAttribute="trailing" constant="50" id="ntd-W2-U6V"/>
+                            <constraint firstItem="3DO-ZG-LuH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="oar-G6-0Dl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="crz-Br-ilF" secondAttribute="trailing" constant="16" id="opg-tb-uM0"/>
+                            <constraint firstItem="ytq-5c-ohM" firstAttribute="top" secondItem="aqA-3v-6Gq" secondAttribute="bottom" constant="40" id="wDI-G3-T7D"/>
+                            <constraint firstItem="d9A-gz-JKW" firstAttribute="top" secondItem="crz-Br-ilF" secondAttribute="bottom" constant="20" id="wlj-RF-0fT"/>
+                            <constraint firstItem="d9A-gz-JKW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="x6d-Kb-oec"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coverImage" destination="ytq-5c-ohM" id="dPh-EU-Tkd"/>
+                        <outlet property="infoTextView" destination="d9A-gz-JKW" id="Qcv-8c-wFm"/>
+                        <outlet property="nameLabel" destination="crz-Br-ilF" id="4ux-Ze-SH5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="backgroundColor">
+            <color red="0.99400001764297485" green="0.9660000205039978" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
